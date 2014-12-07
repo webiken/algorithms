@@ -1,0 +1,45 @@
+We are given a top view of a hotel floor, which is represented by an MxN matrix of characters, composed of (only) the following:
+
+'#' is a Wall
+'-' is Free Space
+'*' is an occupied space (by a single person).
+
+We are required to evaluate the average number of people living in a room.
+
+Constraints: 
+M, N <= 100
+Number of test-cases<= 10
+All border edges of the map will be walls.
+There will be at least one room.
+
+Input
+
+The 1st line contains the number of test inputs, with each test case consisting of:
+M N
+MxN matrix of characters
+
+Output
+
+For each test case output a line with the average number of people living per room, rounded to exactly two decimal places.
+
+Example
+
+Input:
+2
+5 5
+#####
+#**##
+###*#
+#**##
+#####
+6 10
+##########
+#---*--*##
+###-*----#
+#**#######
+##***---##
+##########
+
+Output:
+1.67
+4.00
