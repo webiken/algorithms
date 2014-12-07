@@ -13,7 +13,7 @@ def solution(_array):
     P = 0
     for i in range(len(_array)):
         if Q < 0 and A[i] >= A[i-1]:
-            Q = i -1
+            Q = i - 1
         if ((Q >= 0 and R < 0)) and (A[i] <= A[i-1] or i+1 == len(_array)):
             R = i - 1
             depth = max(depth, min(A[P]-A[Q], A[R]-A[Q]))
